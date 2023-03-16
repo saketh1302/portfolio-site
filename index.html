@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info About Team Members</title>
+    <link
+      rel="icon"
+      href="https://www.iiitdm.ac.in/img/BrandBook/Insignia.png"
+    />
+    <link rel="stylesheet" href="ind.css" />
+    <!-- <link rel="stylesheet" href="project_Team_Section.css"> -->
+    <!-- <link rel="stylesheet" href="project_Team_Extras.css"> -->
+    <!--for header part-->
+    <style>
+      /* css for logo*/
+
+      .container {
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-resume-cover-image_264330.jpg");
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 450vh;
+      }
+
+      #logoSpace {
+        border: 2px solid red;
+        height: 140px;
+        display: flex;
+        float: left;
+        width: 100%;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoltjboNK69zqYIMJNsfcCexaE0ZryhfDBx8a357NM0BHUEhYTqL0U56R5ADWSToqWEtw&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      #logoId {
+        height: 156px;
+        width: 164px;
+        margin: auto;
+        border-radius: 125px;
+        float: left;
+        margin: -1px;
+      }
+
+      #headingId {
+        text-align: center;
+        padding: 28px 318px;
+        transition: 1s;
+      }
+
+      /* css for navbar */
+
+      #navBar {
+        display: flex;
+        list-style: none;
+      }
+
+      .navClass {
+        margin: 23px 62px;
+        padding: 25px 14px;
+        font-family: "Rowdies", cursive;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(90, 16, 26);
+        border: -1px solid red;
+        border-radius: 63px;
+        font-size: 30px;
+        transition: 1s;
+      }
+
+      #bodyPara1 {
+        text-align: center;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: bolder;
+        font-family: "Inconsolata", monospace;
+        color: rgb(90, 16, 26);
+      }
+
+      /* Box class UL */
+
+      .boxClassUL {
+        display: flex;
+        justify-content: center;
+      }
+
+      /*Box classes for team members photos */
+
+      .boxClass {
+        border: 8px solid rgb(2, 39, 44);
+        margin: 8px 23px;
+        height: 116px;
+        width: 126px;
+      }
+
+      .boxClassImg {
+        height: 117px;
+        width: 127px;
+        transition: 1s;
+      }
+
+      /* body para 2 */
+
+      #bodyPara2 {
+        margin: 52px 58px;
+        font-size: 20px;
+        font-family: "Dancing Script", cursive;
+        color: rgb(4, 87, 11);
+        text-align: center;
+        font: bold;
+      }
+
+      /* Box members */
+
+      .membersBox {
+        display: flex;
+        border: 5px solid rgb(2, 39, 44);
+        height: 400px;
+        margin: 22px 52px;
+        text-align: center;
+        border-radius: 74px;
+        box-shadow: 7px 5px rgb(56, 153, 156);
+      }
+
+        .membersBox:hover{
+        background-color: antiquewhite;
+        opacity: 0.75;
+        transition: 4s;
+
+       } 
+      .image1 {
+        height: 316px;
+        width: 224px;
+        padding: 16px 27px;
+        border-radius: 69px;
+        border: 3px solid rgb(9, 13, 61);
+        background-image: url("https://images.unsplash.com/photo-1582573732277-c5444fa37391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFpbmJvdyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+      }
+
+      #img1Para1 {
+        padding: 15px 298px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: "Zilla Slab", serif;
+        
+      }
+
+      #img1Para2 {
+        padding: 15px 298px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: "Zilla Slab", serif;
+      }
+
+      #img1Para3 {
+        padding: 15px 298px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: "Zilla Slab", serif;
+      }
+
+      #img1Para4 {
+        padding: 15px 298px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: "Zilla Slab", serif;
+      }
+
+      #img1Para5 {
+        padding: 15px 298px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: "Zilla Slab", serif;
+      }
+      /* hovering and extras to be done*/
+
+      /* this is for border first box that is logo area */
+      /* this is for heading inside logo area */
+
+      #headingId:hover {
+        color: rgb(170, 236, 17);
+        transform: scale(2);
+      }
+
+      /* this is for navigation list */
+
+      .navClass:hover {
+        background-color: rgb(247, 169, 26);
+        transform: skew(15deg);
+      }
+      
+      /* this is for heading after navigation list - team members */
+
+
+      /* this is for images of team members of flex type */
+
+      .boxClassImg:hover {
+        transform: scale(2);
+      }
+
+      /* this is for heading after navigation list - Now...let us know about Our TEAM MEMBERS */
+
+      .resume{
+        color: rgb(238, 14, 14);border: 3px solid black;padding: 5px;
+        transition: 2s;
+      }
+      .resume:hover{
+        background-color: rgb(208, 250, 57);
+        
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--this is header section which contains navbar etc-->
+      <header>
+        <!--setting team logo-->
+        <div id="logoSpace">
+          <img
+            id="logoId"
+            src="https://image.shutterstock.com/image-vector/business-people-together-vector-illustration-260nw-1042389634.jpg"
+            alt=""
+           
+          />
+
+          <h1 id="headingId" >TEAM BUDDIES INFORMATION</h1>
+        </div>
+
+        <!--setting navigation bar-->
+        <div>
+          <ul id="navBar">
+            <li class="navClass">Home</li>
+            <li class="navClass">
+              <a href="#teammembers" style="text-decoration: none;color: inherit;">
+              Members </a></li>
+            <li class="navClass">About</li>
+            <li class="navClass"> 
+              <a href="./contact.html" style="text-decoration: none;color: inherit;">contact </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!--this is section which contains body of html etc-->
+      <section>
+        <!--Body paragraph 1-->
+        <div id="teammembers">
+          <p id="bodyPara1">TEAM MEMBERS</p>
+        </div>
+
+        <!--adding images-->
+        <div >
+          <ul class="boxClassUL" >
+            <div class="boxClass">
+              <a href="#img1Para1" >
+                <img class="boxClassImg" src="images/sanjay.jpeg" alt=""
+              /></a>
+            </div>
+            <div class="boxClass">
+              <a href="#img1Para2">
+                <img class="boxClassImg" src="images/jayanth.jpeg" alt=""
+              /></a>
+            </div>
+            <div class="boxClass">
+              <a href="#img1Para3"
+                ><img class="boxClassImg" src="images/yatish.jpeg" alt=""
+              /></a>
+            </div>
+            <div class="boxClass">
+              <a href="#img1Para4">
+                <img
+                  class="boxClassImg"
+                  src="images/sumanth.jpeg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="boxClass">
+              <a href="#img1Para5">
+                <img class="boxClassImg" src="images/img.jpeg" alt=""
+              /></a>
+            </div>
+          </ul>
+        </div>
+
+        <p id="bodyPara2"><b>A Brief Snap of Members</b>  </p>
+
+        <!--member 1-->
+        <div class="membersBox">
+          <img class="image1" src="images/sanjay.jpeg" />
+
+          <p id="img1Para1">
+            Name - SANJAY D <br />
+            Roll - CS20B1014 <br />
+            DOB - 04/01/2002 <br />
+            Place - Bangalore,Karnataka <br />
+            Hobbies - Travelling<br /><br />
+            <a class="resume" href="./resume/sanjayresume.html" >   
+              RESUME 
+           </a> <br> <br>
+            I done my schooling in "Sharada Vidya Mandira" in Kadugodi,
+            Bangalore. And my intermediate clg is done in "MVJ PU College",
+            Channasandra, Bangalore. Currently, I am pursuing my studies in
+            "Indian Institute of Information Technology, Kancheepuram", Chennai,
+            Tamil-Nadu.
+          </p>
+        </div>
+
+        <!--member 2-->
+        <div class="membersBox">
+          <img class="image1" src="images/jayanth.jpeg" />
+
+          <p id="img1Para2">
+            Name - JAYANTH D N <br />
+            Roll - CS20B1019 <br />
+            DOB - 09/03/2002 <br />
+            Place - Bangalore,Karnataka <br />Hobbies - Photography<br /> <br>
+            <a class="resume" href="./resume/jayanthresume.html" >   
+              RESUME 
+           </a> <br> <br>
+            I done my schooling in "SREE VENKATESHWARA HIGH SCHOOL" in Hoskote,
+            Bangalore. And my intermediate clg is done in "SREE MARUTHI PU
+            COLLEGE", Hoskote,Bangalore. Currently, I am pursuing my studies in
+            "Indian Institute of Information Technology, Kancheepuram", Chennai,
+            Tamil-Nadu.
+          </p>
+        </div>
+
+        <!--member 3-->
+        <div class="membersBox">
+          <img class="image1" src="images/yatish.jpeg" />
+
+          <p id="img1Para3">
+            Name - P YATISH CHANDRA <br />
+            Roll - CS20B1045 <br />
+            DOB - 23/04/2004 <br />
+            Place - Macherla,Andra Pradesh <br />Hobbies - Listening to Music<br /><br />
+            <a class="resume" href="./resume/YatishResume.html"  >   
+              RESUME 
+           </a> <br> <br>
+            I done my schooling in "Narayan High School" in Macherla, Andra
+            Pradesh. And my intermediate clg is done in "Sri Chaitanya",
+            Vijayawada, Andra Pradesh. Currently, I am pursuing my studies in
+            "Indian Institute of Information Technology, Kancheepuram", Chennai,
+            Tamil-Nadu.
+          </p>
+        </div>
+
+        <!--member 4-->
+        <div class="membersBox">
+          <img class="image1" src="images/sumanth.jpeg" />
+
+          <p id="img1Para4">
+            Name - KONDA SUMANTH GOUD <br />
+            Roll - CS20B1027 <br />
+            DOB - 15/08/2002 <br />
+            Place - SURYAPET,TELANGANA <br />Hobbies - Watching Movies<br /><br />
+            <a class="resume" href="./resume/sumanthresume.html"  >   
+              RESUME 
+           </a> <br> <br>
+            I done my schooling in "Jaya High School" in Suryapet, Telangana.
+            And my intermediate clg is done in "Sri Chaitanya",
+            Hyderabad,Telangana. Currently, I am pursuing my studies in "Indian
+            Institute of Information Technology, Kancheepuram", Chennai,
+            Tamil-Nadu.
+          </p>
+        </div>
+
+        <!--member 5-->
+        <div class="membersBox">
+          <img class="image1" src="images/img.jpeg" />
+
+          <p id="img1Para5">
+            Name - V SAKETH REDDY <br />
+            Roll - CS20B1058 <br />
+            DOB - 13/02/2003 <br />
+            Place - MAHABUBNAGAR,TELANGANA <br />Hobbies - Playing Cricket<br />
+
+            <br>
+            <a class="resume" href="./resume/resume.html"  >   
+               RESUME 
+            </a> <br> <br>
+            I done my schooling in "KKR GOUTHAM" in Hyderabad. And my
+            intermediate clg is done in "Sri Chaitanya", Hyderabad,Telangana.
+            Currently, I am pursuing my studies in "Indian Institute of
+            Information Technology, Kancheepuram", Chennai, Tamil-Nadu.
+            
+           
+          </p>
+
+          
+        </div>
+      </section>
+      <div style="height: 400px"></div>
+
+      
+      </div>
+    </div>
+  </body>
+</html>
+
